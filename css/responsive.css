@@ -131,6 +131,7 @@
     .feature-left .feature-box .feature-icon {
         left: -20px;
         right: auto;
+        top: -23px;
     }
     .feature-list {
         padding: 0;
@@ -161,7 +162,7 @@
 @media all and (max-width: 576px) {
     h3,
     h4 {
-        font-size: 13px;
+        font-size: 18px;
     }
     .subscribe-form {
         width: 100%;

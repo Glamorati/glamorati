@@ -93,7 +93,7 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 h5,
@@ -133,7 +133,12 @@ a:focus {
 	outline: 0;
 	text-decoration: none
 }
-
+.font-14 {
+	font-size: 14px;
+}
+.rose-gold {
+	color: #e1ac9e;
+}
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: #888 !important
@@ -1015,7 +1020,8 @@ ul.nav>li>a.active {
 .swiper-container .swiper-next:hover,
 .swiper-container .swiper-prev:hover {
 	opacity: 1;
-	transition: all .3s ease-in-out
+	transition: all .3s ease-in-out;
+	outline: 0;
 }
 
 .video-section {
@@ -1854,7 +1860,7 @@ button,
 .logo {
 	border-top: 2px solid #ffc8b1;
 	border-bottom: 2px solid #ffc8b1;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'caviar_dreamsregular';
 	font-size: 1.5rem;
 	-moz-border-image: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	-webkit-border-image: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
@@ -2024,7 +2030,7 @@ ol li::before {
 
 @media (max-width: 768px) {
 	.feature-box.mb-40 {
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 
 	.form-check-inline {
