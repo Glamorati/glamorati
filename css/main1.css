@@ -1848,6 +1848,10 @@ a:hover {
 	color: #ffffff;
 }
 
+.table-odd {
+    background:rgba(255, 255,255,0.05);
+}
+
 .btn,
 button,
 .submit {
@@ -1928,7 +1932,7 @@ button,
 .survey-conteiner table th, .survey-conteiner table td {
 	vertical-align: middle;
 }
-.survey-conteiner table td {
+.survey-conteiner table td , .survey-conteiner table th {
 	text-align: center;
 }
 .survey-conteiner .actions ul {
