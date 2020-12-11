@@ -722,6 +722,7 @@ ul.nav>li>a.active {
 	background: linear-gradient(0deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-size:30px;
 }
 
 .feature-left .feature-box h4 {
