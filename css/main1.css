@@ -1589,8 +1589,8 @@ ul.nav>li>a.active {
 }
 
 .submit {
-	background-color: #e1ac9e;
-	color:#fff;
+	background: #ffc8b1;
+	background: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);	color:#000;
 	border: 0;
 	font-size: 14px;
 	line-height: 36px;
