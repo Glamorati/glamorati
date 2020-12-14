@@ -2242,6 +2242,4 @@ ol li::before {
 		background-position: 0!important;
 		border: 0!important;
 }
-input:invalid {
-  background-color: black;
-}
+
