@@ -40,14 +40,13 @@
   </script>
    
    <script>
-      function myFunction(){
-         var txt="";
-         if (document.getElementById("email_id").validity.rangeUnderflow)
-         {
-            alert("Please provide your email.");
+      function validateform(){
+         var email=document.google-sheet.Email.value; 
+         if(email==nul || email==""){
+            alert("Please provide your email.”");
+            return false; 
          }
-         document.getElementById("alert").innerHTML = txt;
-      }
+      }   
    </script>
 </head>
 
@@ -106,7 +105,7 @@
         <div class="row justify-content-md-center mt-1 mb-4">
           <div class="col col-md-8">
             <div class="survey">
-              <form method="post" autocomplete="off" name="google-sheet" onclick="myFunction()">
+              <form method="post" autocomplete="off" name="google-sheet" onsubmit="return validateform()">
                 <div class="form-group mb-30">
                   <p for="" class="form-text text-muted">Enter your email address and get priority access when we go
                     live.</p>
