@@ -46,6 +46,7 @@
          {
             alert("Please provide your email.");
          }
+         document.getElementById("alert").innerHTML = txt;
       }
    </script>
 </head>
@@ -105,7 +106,7 @@
         <div class="row justify-content-md-center mt-1 mb-4">
           <div class="col col-md-8">
             <div class="survey">
-              <form method="post" autocomplete="off" name="google-sheet">
+              <form method="post" autocomplete="off" name="google-sheet" onclick="myFunction()">
                 <div class="form-group mb-30">
                   <p for="" class="form-text text-muted">Enter your email address and get priority access when we go
                     live.</p>
@@ -118,7 +119,7 @@
                 <textarea name="Comments" class="form-control mb-4" id="" rows="4"
                   placeholder="Your feedback means the world to us, so please drop us a line and tell us what you think!"></textarea>
                 <!-- <button class="btn btn-primary submit border-0">Submit</button> -->
-                <input type="submit" name="submit" class="submit" value="Submit" onclick="myFunction()" />
+                <input type="submit" name="submit" class="submit" value="Submit"/>
                 <p>Complete a 5 minute Beauty Questionnaire
                   and we’ll give you a <strong>$5</strong> Sephora gift card.</p>
 
