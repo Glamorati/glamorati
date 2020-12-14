@@ -109,7 +109,8 @@
                 <div class="form-group mb-30">
                   <p for="" class="form-text text-muted">Enter your email address and get priority access when we go
                     live.</p>
-                  <input id="email_id" type="email" class="form-control border-0 form-control-lg w-50" name="Email">
+                  <input type="email" class="form-control border-0 form-control-lg w-50" name="Email" required="" oninvalid="this.setCustomValidity('Please provide your email.')"
+ oninput="setCustomValidity('')">
                   <p id="" class="form-text text-muted font-14">Privacy is important to us. We’ll never…ever,
                     share your email details with anyone else.</p>
                 </div>
