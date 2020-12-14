@@ -38,6 +38,16 @@
     gtag('js', new Date());
     gtag('config', 'UA-180682692-1');
   </script>
+   
+   <script>
+      function myFunction(){
+         var txt="";
+         if (document.getElementById("email_id").validity.rangeUnderflow)
+         {
+            alert("Please provide your email.");
+         }
+      }
+   </script>
 </head>
 
 <body data-spy="scroll" data-target="#navmenu" data-offset="70" class="d-flex flex-column h-100">
@@ -99,8 +109,7 @@
                 <div class="form-group mb-30">
                   <p for="" class="form-text text-muted">Enter your email address and get priority access when we go
                     live.</p>
-                  <input type="email" class="form-control border-0 form-control-lg w-50" name="Email"
-                    required="required">
+                  <input id="email_id" type="email" class="form-control border-0 form-control-lg w-50" name="Email">
                   <p id="" class="form-text text-muted font-14">Privacy is important to us. We’ll never…ever,
                     share your email details with anyone else.</p>
                 </div>
@@ -109,7 +118,7 @@
                 <textarea name="Comments" class="form-control mb-4" id="" rows="4"
                   placeholder="Your feedback means the world to us, so please drop us a line and tell us what you think!"></textarea>
                 <!-- <button class="btn btn-primary submit border-0">Submit</button> -->
-                <input type="submit" name="submit" class="submit" value="Submit" />
+                <input type="submit" name="submit" class="submit" value="Submit" onclick="myFunction()" />
                 <p>Complete a 5 minute Beauty Questionnaire
                   and we’ll give you a <strong>$5</strong> Sephora gift card.</p>
 
