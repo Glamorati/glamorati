@@ -1904,7 +1904,7 @@ button,
 	margin-bottom: 20px;
 }
 .survey-conteiner .steps ul {
-	display:flex;
+	display:none;
 	justify-content: space-between;
 }
 .survey-conteiner .steps ul li {
