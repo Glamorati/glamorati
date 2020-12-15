@@ -12677,7 +12677,10 @@
         body: new FormData(form)
       })
         .then(response => {
-
+         $.each($(form).serializeArray(), function (i, field) {
+            console.log(field.name)
+            sessionStorage.setItem(field.name, field.value);
+          });
           const url = window.location.href;
           const shortUrl = url.substring(0, url.lastIndexOf("/"));
           window.location = shortUrl + '/success.html'
