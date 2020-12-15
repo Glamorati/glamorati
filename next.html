@@ -12663,16 +12663,7 @@
   <script src="js/main.js"></script>
 
   <script>
-    $(document).ready(function () {
-      var email = sessionStorage.getItem('Email')
-      var comments = sessionStorage.getItem('Comments')
-      if (email) {
-        $('[name="Email"]').val(email)
-        $('[name="Comments"]').val(comments)
-      } else {
-        window.location = window.location.origin + '/join.html'
-      }
-    });
+   
      $(document).ready(function () {
       var survey1 = sessionStorage.getItem('Survey1')
       var survey2 = sessionStorage.getItem('Survey2')
