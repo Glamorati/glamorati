@@ -129,7 +129,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="survey1">
+                                  <input type="radio" name="survey1" value="">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -12671,6 +12671,16 @@
         $('[name="Comments"]').val(comments)
       } else {
         window.location = window.location.origin + '/join.html'
+      }
+    });
+     $(document).ready(function () {
+      var survey1 = sessionStorage.getItem('Survey1')
+      var survey2 = sessionStorage.getItem('Survey2')
+      if (Survey1) {
+        $('[name="Survey1"]').val(survey1)
+        $('[name="Survey2"]').val(survey2)
+      } else {
+        window.location = window.location.origin + '/next.html'
       }
     });
 
