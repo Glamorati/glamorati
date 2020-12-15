@@ -100,9 +100,10 @@
               <div class="d-flex justify-content-between">
                 <h4 class="mb-4 rose-gold">Beauty Questionnaire</h4>
               </div>
+               <form method="post" name="survey-data">
               <div id="survey">
                 <h3></h3>
-                <form method="post" name="survey-data">
+                
                 <section>
                   <div class="row">
                       
@@ -12621,9 +12622,9 @@
                      
                   </div>
                 </section>
-                   <input type="submit" name="submit" class="submit" value="Submit"/>
-                     </form>
               </div>
+            <input type="submit" name="submit" class="submit" value="Submit"/>
+               </form>
             </div>
           </div>
         </div>
@@ -12666,17 +12667,6 @@
   <script src="js/main.js"></script>
 
   <script>
-     $(document).ready(function () {
-      var email = sessionStorage.getItem('Email')
-      var comments = sessionStorage.getItem('Comments')
-      if (email) {
-        $('[name="Email"]').val(email)
-        $('[name="Comments"]').val(comments)
-      } else {
-        window.location = window.location.origin + '/join.html'
-      }
- 
-
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
     const form = document.forms['survey-data']
 
