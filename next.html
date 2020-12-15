@@ -102,7 +102,7 @@
               </div>
               <div id="survey">
                 <h3></h3>
-                 <form method="post" autocomplete="off" name="google-sheet">
+                 <form method="post" name="survey-data">
                 <section>
                   <div class="row">
                     <div class="col-12">
@@ -12663,20 +12663,19 @@
   <script src="js/main.js"></script>
 
   <script>
-   
      $(document).ready(function () {
-      var survey1 = sessionStorage.getItem('Survey1')
-      var survey2 = sessionStorage.getItem('Survey2')
-      if (survey1) {
-        $('[name="Survey1"]').val(survey1)
-        $('[name="Survey2"]').val(survey2)
+      var email = sessionStorage.getItem('Email')
+      var comments = sessionStorage.getItem('Comments')
+      if (email) {
+        $('[name="Email"]').val(email)
+        $('[name="Comments"]').val(comments)
       } else {
-        window.location = window.location.origin + '/next.html'
+        window.location = window.location.origin + '/join.html'
       }
-    });
+ 
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
-    const form = document.forms['google-sheet']
+    const form = document.forms['survey-data']
 
     form.addEventListener('submit', e => {
       e.preventDefault()
