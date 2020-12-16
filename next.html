@@ -103,7 +103,7 @@
               
                  
                 <h3></h3>
-                <section>
+                <section id="page1">
                    <form method="post" action="next.html" name="survey-data" onsubmit="return validateform()">
                   <div class="row">
                     <div class="col-12">
@@ -1254,13 +1254,16 @@
                             </td>
                             
                           </tr>
+				<tr>
+							  <td><ul id="pagination-demo" class="pagination-lg pull-right"></ul></td>		  
+				</tr>
                         </tbody>
                      </table>
                     </div>
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page2">
                   <div class="row">
                     <div class="col-12">
                       <h3>6. Please rank how big of a problem each is when looking for beauty content online.</h3>
@@ -1679,7 +1682,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page3">
                   <div class="row">
                     <div class="col-12">
                       <h3>11.	How easy is it to find beauty looks for your skin tone and hair type/color on social media sites and YouTube?</h3>
@@ -2391,7 +2394,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page4">
                   <div class="row">
                     <div class="col-12">
                       <h3>16.	If you don’t purchase productspromoted by beauty influencers you follow at least monthly, please explain why in a few words.</h3>
@@ -3357,7 +3360,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page5">
                   <div class="row">
                     <div class="col-12">
                       <h3>21.	How easy is it to find beauty products on the following social media sites?</h3>
@@ -4269,7 +4272,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page6">
                   <div class="row">
                     <div class="col-12">
                       <h3>26.	In a few words please explain why you agree or disagree.</h3>
@@ -4986,7 +4989,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page7">
                   <div class="row">
                     <div class="col-12">
                       <h3>31.	How important is</h3>
@@ -5949,7 +5952,7 @@
                   </div>
                 </section>
                 <h3></h3>
-                <section>
+                <section id="page8">
                   <div class="row">
                     <div class="col-12">
                       <h3>1. How often do you watch beauty videos on:</h3>
@@ -7613,6 +7616,8 @@
   <script src="js/vendor/jquery.steps.min.js"></script>
   <script src="js/main.js"></script>
 
+	  <script src="js/paging.js"></script>	
+	  <script src="https://www.solodev.com/assets/pagination/jquery.twbsPagination.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
     const form = document.forms['survey-data']
