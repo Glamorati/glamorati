@@ -104,7 +104,7 @@
               <div id="survey">
                  
                 <h3></h3>
-		      <div align="right" id="total" class="status_report">Total Question Attempts:<b id=selectedRadioCount></b>/46</div>   
+		      <div align="right" id="total" >Total Question Attempts:<span class="count"></span>/46</div>   
                 <section>
                    <form method="post" action="next.html" name="survey-data" onsubmit="return validateform()">
                   <div class="row">
@@ -132,7 +132,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Daily">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Daily">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -141,7 +141,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Two or three times a week">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Two or three times a week">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -150,7 +150,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Weekly">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Weekly">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -159,7 +159,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Two or three times a month">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Two or three times a month">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -168,7 +168,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Monthly">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Monthly">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -177,7 +177,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Every two or three months">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Every two or three months">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -186,7 +186,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Once a year">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Once a year">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -195,7 +195,7 @@
                             <td>
                               <label class="radio radio-before">
                                 <span class="radio__input">
-                                  <input type="radio" name="Survey1" value="YouTube-Never">
+                                  <input type="radio" class="radio" name="Survey1" value="YouTube-Never">
                                   <span class="radio__control"></span>
                                 </span>
                                 <span class="radio__label"></span>
@@ -7642,7 +7642,20 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
+<script>
+$(document).ready(function () {
+  $('.count input').attr('readonly', true);
+  $('.radio').change(function () {
+    var count=0;
+    $('.radio input:checked').each(function(){
+      if ($(this).val().replace(/V_/g,'')=="No") {
+        count += 1;
+      }
+    });
+    $('.count input').val(count);
+  });
+});	
+ </script>
 </body>
 
 
