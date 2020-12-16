@@ -2248,5 +2248,10 @@ ol li::before {
 	background:linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	padding:3px;
 	border-radius:3px;
+	
 }
+.actions ul li{
+	margin:15px;
+}
+
 
