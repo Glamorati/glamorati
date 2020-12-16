@@ -2258,4 +2258,12 @@ ol li::before {
 	font-weight:700;
 	font-size:21px;
 }
-
+::root{
+  counter-reset: filledInputCount;
+}
+input[type='radio']{
+  counter-increment: filledInputCount;
+}
+#filledInputCount::before{
+  content: counter(filledInputCount);
+}
