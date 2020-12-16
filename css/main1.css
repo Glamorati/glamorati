@@ -2258,21 +2258,4 @@ ol li::before {
 	font-weight:700;
 	font-size:21px;
 }
-::root{
-  counter-reset: selectedRadioCount, unSelectedRadioCount;
-}
-input[type='radio']:nth-of-type(3n){
-  counter-increment: unSelectedRadioCount;
-}
-input[type='radio']:nth-of-type(3n):checked{
-  counter-increment: selectedRadioCount;
-}
-input[type='radio']:not(:nth-of-type(3n)):checked{
-  counter-increment: unSelectedRadioCount -1 selectedRadioCount;
-}
-#selectedRadioCount::before{
-  content: counter(selectedRadioCount);
-}
-#unSelectedRadioCount::before{
-  content: counter(unSelectedRadioCount);
-}
+
