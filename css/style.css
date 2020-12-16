@@ -5890,3 +5890,9 @@ body.switch-open {
 	display: flex;
 	flex-direction: column;
 }
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
