@@ -2253,5 +2253,9 @@ ol li::before {
 .actions ul li{
 	margin:15px;
 }
-
+.status_report{
+	color:#fff;
+	font-weight:700;
+	font-size:21px;
+}
 
