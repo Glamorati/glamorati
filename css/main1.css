@@ -2251,7 +2251,10 @@ ol li::before {
 	
 }
 .actions ul li{
-	margin:15px;
+	margin:15px;width:100px;float:right;
+}
+.actions ul li.disabled{
+	width:150px;float:left;margin:15px;
 }
 .status_report{
 	color:#fff;
