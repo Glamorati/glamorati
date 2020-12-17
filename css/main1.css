@@ -2251,10 +2251,10 @@ ol li::before {
 	
 }
 .actions ul li{
-	margin:15px;width:100px;float:right;
+	margin:15px;width:100px;float:right;font-weight:400;
 }
 .actions ul li.disabled{
-	width:150px;float:left;margin:15px;
+	width:150px;float:left;margin:15px;font-weight:400;
 }
 .status_report{
 	color:#fff;
