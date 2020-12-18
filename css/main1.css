@@ -2251,7 +2251,7 @@ ol li::before {
 	
 }
 .actions ul li{
-	margin:15px;width:100px;float:right;font-weight:800;
+	margin:15px;width:100px;float:left;font-weight:800;
 }
 
 .status_report{
