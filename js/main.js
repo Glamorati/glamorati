@@ -128,5 +128,63 @@
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
+     onStepChanged: function (event, currentIndex, priorIndex) {
+        if(currentIndex != 7){
+            var result = $('ul[aria-label=Pagination]').children().find('a');
+            $(result).each(function () {
+                $(this).css('display', 'block');        //turn everything visible again
+            });
+        }
+        if (currentIndex === 1 && priorIndex === 0) {
+
+        }
+        },
+        onFinishing: function (event, currentIndex) {
+            var form = $(this);
+            var result = $('ul[aria-label=Pagination]').children().find('a');
+            $(result).each(function () {
+                if ($(this).text() == 'Finish') {
+                    //$(this).attr('disabled', 'disabled');
+                    //$(this).css('background', 'green');
+                    $(this).css('display', 'none');
+                    alert("Now you cannot click the #finish button twice,"+ 
+                        "press Previous and it will reappear");
+                }
+            });
+
+        form.validate().settings.ignore = ":disabled, :hidden";
+
+        return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert(event+":"+currentIndex);
+            var form = $(this);
+            event.preventDefault();
+            getResult();
+            // enableFinishButton: false;
+            // Submit form input
+            //form.submit();
+        },
+    stepsOrientation: "vertical", 
+    }).validate({
+        /* 
+        submitHandler: function() { 
+            alert("submit handler function not being called, validate not working");
+            $("#finish").prop('disabled', true);
+        },
+        success: function(response){
+            alert("success function not being called, validate not working");
+            $("#finish").prop('disabled', false); 
+        },
+        */
+
+        errorPlacement: function (error, element) {
+            $('#step1Errors').append(error);
+        },
+        rules: {
+        },
+        messages: {
+
+        }
 });
 })(jQuery);
