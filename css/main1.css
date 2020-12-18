@@ -2253,9 +2253,7 @@ ol li::before {
 .actions ul li{
 	margin:15px;width:100px;float:right;font-weight:800;
 }
-.actions ul li.disabled{
-	width:150px;float:left;margin:15px;font-weight:800;
-}
+
 .status_report{
 	color:#fff;
 	font-weight:700;
