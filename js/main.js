@@ -125,7 +125,7 @@
   };
 
   $("#survey").steps({
-    headerTag: "h2",
+    headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
 });
