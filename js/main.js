@@ -125,7 +125,7 @@
   };
 
   $("#survey").steps({
-    cssClass: "page",
+    cssClass: ".page",
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
