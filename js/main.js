@@ -128,5 +128,6 @@
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
+    enableFinishButton: false,
 });
 })(jQuery);
