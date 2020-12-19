@@ -129,6 +129,18 @@
     bodyTag: "section",
     transitionEffect: "slideLeft",
     enableFinishButton: false,
+    onStepChanging: function (event, currentIndex, newIndex){
+        if (is_async_step) {
+            is_async_step = false;
+            //ALLOW NEXT STEP
+            return true;
+        }
+        if(currentIndex==0){
+           //do your stuff
+            is_async_step = true;
+            $("#survey").steps("next");
+        }
+    }
 });
   
 })(jQuery);
