@@ -128,6 +128,7 @@
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
+    autoFocus: true,
     enableFinishButton: false,
 });
   
