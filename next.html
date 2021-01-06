@@ -29,7 +29,8 @@
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/main1.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-<link rel="stylesheet" href="css/counter.css" />	
+<link rel="stylesheet" href="css/counter.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,7 +41,12 @@
     gtag('js', new Date());
     gtag('config', 'UA-180682692-1');
   </script>
-	
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>	
 </head>
 
 <body data-spy="scroll" data-target="#navmenu" data-offset="70" class="d-flex flex-column h-100">
@@ -6910,7 +6916,7 @@
                          <tbody>
                           <tr>
                             <td style="text-align:left;">
-                              <input type="date" name="Survey44" value="Date of birth:">
+                              <input type="text" name="Survey44" value="Date of birth:"  id="datepicker">
                             </td>
                           </tr>
 			
@@ -7151,7 +7157,7 @@
   <script src="js/vendor/jquery.slicknav.min.js"></script>
   <script src="js/vendor/jquery.steps.min.js"></script>
   <script src="js/main.js"></script>
-
+  
 	 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
