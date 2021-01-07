@@ -2272,6 +2272,6 @@ ol li::before {
 @media only screen and (max-width:400px) {
 	.submit_style{
 	width:100px;height:200px;position:absolute;top:-150;padding-top:20px;
-		.steps{display:run-in;}
+		.steps{display:block;}
 }
 }
