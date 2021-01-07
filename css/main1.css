@@ -2261,4 +2261,6 @@ ol li::before {
 	font-weight:700;
 	font-size:21px;
 }
-
+.submit_style{
+	width:500px;height:200px;position:absolute;top:-150;padding-top:20px;margin-left:600px;
+}
