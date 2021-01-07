@@ -131,16 +131,6 @@
     autoFocus: true,
     enableFinishButton: false,
 });
-  $.fn.steps.reset = function () {
-  var survey = this,
-  options = getOptions(this),
-  state = getState(this);
-  goToStep(survey, options, state, 0);
-
-  for (i = 1; i < state.stepCount; i++) {
-    var stepAnchor = getStepAnchor(survey, i);
-    stepAnchor.parent().removeClass("done")._enableAria(false);
-  }
-};
+  
   
 })(jQuery);
