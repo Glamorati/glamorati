@@ -4235,21 +4235,11 @@
   <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 <script>
-  $(document).ready( function() {
-	 
-  var userLang = navigator.language || navigator.userLanguage;
-
-  var options = $.extend({},
-    $.datepicker.regional["en"], {
-      dateFormat: "mm/dd/yyyy",
-      
+  $( function() {
+    $( "#datepicker" ).datepicker({
       changeYear: true,
-     
-    }
-  );
- 
-	  
-    $( "#datepicker" ).datepicker(options);
+      yearRange : 'yy-50:yy+1'
+    });
   } );
   </script>
 	 
