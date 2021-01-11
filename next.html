@@ -4236,7 +4236,20 @@
 <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 <script>
   $( function() {
-    $( "#datepicker" ).datepicker();
+	 $(document).ready(function () {
+  var userLang = navigator.language || navigator.userLanguage;
+
+  var options = $.extend({},
+    $.datepicker.regional["en"], {
+      dateFormat: "mm/dd/yyyy",
+      
+      changeYear: true,
+     
+    }
+  );
+ 
+	  
+    $( "#datepicker" ).datepicker(options);
   } );
   </script>
 	 
