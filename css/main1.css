@@ -2277,4 +2277,5 @@ ol li::before {
 }
 	td img{width:100%;}
 	tr td{width:100%;}
+	thead, tbody{width:100%;}
 }
