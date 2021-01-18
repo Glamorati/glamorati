@@ -2242,9 +2242,7 @@ ol li::before {
 		background-position: 0!important;
 		border: 0!important;
 }
-@media only screen and (min-width:800px){
-.steps{display:none;}
-}
+
 .steps ul li a{color:#000;}
 .steps ul li{display:inline;}
 .actions ul li a{
