@@ -4187,6 +4187,8 @@
                       </table>
                         <p align="center" style="font-size:26px;font-weight:800;" class="mb-4 mat-text">4 of 4</p>
 			 <p align="right" class="submit_style">
+				 <input type="hidden" name="Email">
+               			 <input type="hidden" name="Comments">
 				 <input type="submit" name="submit" class="submit" style="font-weight:800;font-size:18px;" value="Submit"/></p>   
 		      </div>
                     </div>
@@ -4253,6 +4255,17 @@
   </script>
 	 
   <script>
+     $(document).ready(function () {
+      var email = sessionStorage.getItem('Email')
+      var comments = sessionStorage.getItem('Comments')
+      if (email) {
+        $('[name="Email"]').val(email)
+        $('[name="Comments"]').val(comments)
+      } else {
+        window.location = window.location.origin + '/join.html'
+      }
+    });
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
     const form = document.forms['survey-data']
 
