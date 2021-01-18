@@ -131,16 +131,5 @@
     autoFocus: true,
     enableFinishButton: false,
 });
-$.fn.steps.setStep = function (step)
-{
-
-    var options = getOptions(this),
-        state = getState(this);
-
-    return _goToStep(this, options, state, index); //Index Instead step
-
-};
-
-survey.steps("setStep", 1);
   
 })(jQuery);
