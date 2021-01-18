@@ -131,5 +131,19 @@
     autoFocus: true,
     enableFinishButton: false,
 });
-  
+ onStepChanged: function (event, currentIndex, priorIndex)
+{
+    // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+    if (currentIndex === 2 && priorIndex === 3)
+    {
+        $(this).steps("previous");
+        return;
+    }
+
+    // Suppress (skip) "Warning" step if the user is old enough.
+    if (currentIndex === 2 && Number($("#age").val()) >= 18)
+    {
+        $(this).steps("next");
+    }
+} 
 })(jQuery);
