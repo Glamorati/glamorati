@@ -124,7 +124,7 @@
     5: 'This email address looks fake or invalid. Please enter a real email address'
   };
 
-  $("#survey").steps({
+  $("#wizard").steps({
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
