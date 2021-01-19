@@ -2279,7 +2279,7 @@ ol li::before {
 }
 	td img{width:100%;}
 	tr td{width:100%;}
-	thead, th, tbody{width:100%;}
+	thead, th, tbody, textarea{width:100%;}
 	
 	
 }
