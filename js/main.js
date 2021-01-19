@@ -131,30 +131,6 @@
     autoFocus: true,
     enableFinishButton: false,
 });
-
- onStepChanging: function (event, currentIndex, newIndex) {
-            if (wizardEncuesta.esperandoConsejos) {
-                wizardEncuesta.esperandoConsejos = false;
-                return true;
-            } else {
-                var $bodyCurrent = $(".body-wizard.body.current");
-                var $form = $("form", $bodyCurrent);
-                wizardEncuesta.$validator = null;
-                wizardEncuesta.$validator = $form.validate({
-                    errorPlacement: function ($error, $element) {
-                        $element.parent().prepend($error);
-                    }
-                }).settings.ignore = ":disabled";
-                if ($form.valid()) {
-                    $bodyCurrent.prepend(gl.conf.spinnerAbsMaxHtml);
-                    wizardEncuesta.esperandoConsejos = true
-                    $form.submit();
-                    return false;
-                } else {
-                    return false;
-                }
-            }
-        },  
   
   
 })(jQuery);
