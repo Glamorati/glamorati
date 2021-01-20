@@ -131,7 +131,7 @@
     autoFocus: true,
     enableFinishButton: false,
     onStepChanged: function(event, currentIndex) {
-    var formData = $('.survey-data').serialize(); // Gets the data from the form fields
+    var formData = $('#survey-fdata').serialize(); // Gets the data from the form fields
     $.post('path_to/form_handler_file', formData)
 });
   
