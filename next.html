@@ -4265,7 +4265,7 @@
         method: 'POST',
         body: new FormData(form)
       })
-        form.then(response => {
+        .then(response => {
          $.each($(form).serializeArray(), function (i, field) {
             console.log(field.name)
             sessionStorage.setItem(field.name, field.value);
