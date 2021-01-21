@@ -130,31 +130,6 @@
     transitionEffect: "slideLeft",
     autoFocus: true,
     enableFinishButton: false,
-    
-    onStepChanging: function (event, currentIndex, newIndex) {
-      var form = $(this);
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
-    const form = document.forms['survey-data']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
-      })
-        .then(response => {
-         $.each($(form).serializeArray(), function (i, field) {
-            console.log(field.name)
-            sessionStorage.setItem(field.name, field.value);
-          });
-          const url = window.location.href;
-          const shortUrl = url.substring(0, url.lastIndexOf("/"));
-          window.location = shortUrl + '/success.html'
-          event.preventDefault();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-    }
    
     
 });
