@@ -130,6 +130,14 @@
     transitionEffect: "slideLeft",
     autoFocus: true,
     enableFinishButton: false,
+    
+     onStepChanging: function (event, currentIndex, newIndex){
+            
+                var form = $(this);
+
+             form.submit();
+            
+            }
    
 });
   
