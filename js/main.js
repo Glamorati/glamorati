@@ -133,8 +133,8 @@
     onStepChanging: function (event, currentIndex, newIndex)
     {
       if (newIndex<currentIndex){
-        return true;
-      }
+       
+      
        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
     const form = document.forms['survey-data']
 
@@ -156,6 +156,7 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+         return true;
     }
 });
 
