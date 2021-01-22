@@ -1905,9 +1905,7 @@ var defaults = $.fn.steps.defaults = {
      * @default function (event, currentIndex, priorIndex) { }
      * @for defaults
      **/
-    onStepChanged: function(event, currentIndex) {
-    var formData = $(survey-data).serializeArray(); // Gets the data from the form fields
-    $.post('glamorati/next.html', formData)},
+    onStepChanged: function(event, currentIndex) { },
 
     /**
      * Fires after cancelation. 
