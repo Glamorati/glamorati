@@ -1905,7 +1905,9 @@ var defaults = $.fn.steps.defaults = {
      * @default function (event, currentIndex, priorIndex) { }
      * @for defaults
      **/
-    onStepChanged: function (event, currentIndex, priorIndex) { },
+    onStepChanged: function(event, currentIndex) {
+    var formData = $(survey-data).serialize(); // Gets the data from the form fields
+    $.post('path_to/form_handler_file', formData)},
 
     /**
      * Fires after cancelation. 
