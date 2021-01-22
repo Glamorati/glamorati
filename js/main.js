@@ -130,7 +130,7 @@
     transitionEffect: "slideLeft",
     autoFocus: true,
     enableFinishButton: false,
-    
+    saveState: true,
 });
 
  
