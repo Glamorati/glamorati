@@ -129,8 +129,7 @@
     bodyTag: "section",
     transitionEffect: "slideLeft",
     autoFocus: true,
-    enableFinishButton: false,
-    showFinishButtonAlways: false,
+    
     
 });
 
