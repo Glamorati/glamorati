@@ -4255,9 +4255,6 @@
 	 
   <script>
     
-onStepChanged: function(event, currentIndex, priorIndex)
-{
-	if(currentIndex == 0){
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
     const form = document.forms['survey-data']
 
@@ -4279,8 +4276,7 @@ onStepChanged: function(event, currentIndex, priorIndex)
         })
         .catch(error => console.error('Error!', error.message))
     })
-	}
-}
+
   </script>
 
 </body>
