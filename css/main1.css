@@ -2266,12 +2266,14 @@ ol li::before {
 .submit_style{
 	width:500px;height:200px;position:absolute;top:-150;padding-top:20px;margin-left:600px;font-weight:bold;
 }
+
 @media only screen and (max-width:600px) {
 	.submit_style{
 	width:100px;height:200px;position:absolute;top:-150;padding-top:20px;margin-left:230px;
 }
 	td img{width:100%;}
 	table{width:100%;}
+	.gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:85px;}
 }
 @media only screen and (max-width:400px) {
 	.submit_style{
@@ -2280,6 +2282,6 @@ ol li::before {
 	td img{width:100%;}
 	tr td{width:100%;}
 	thead, th, tbody, textarea{width:100%;}
-	
+	.gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:100px;}
 	
 }
