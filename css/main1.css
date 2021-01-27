@@ -2273,7 +2273,7 @@ ol li::before {
 }
 	td img{width:100%;}
 	table{width:100%;}
-	.gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:85px;}
+	.gift_card{color:#fff;width:350px;margin:0 auto;position:relative;top:100px;}
 }
 @media only screen and (max-width:400px) {
 	.submit_style{
