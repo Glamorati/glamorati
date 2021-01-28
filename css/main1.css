@@ -2274,7 +2274,7 @@ ol li::before {
 	td img{width:100%;}
 	table{width:100%;}
 	.gift_card{color:#fff;width:350px;margin:0 auto;position:relative;top:100px;}
-	.table td, .table th{padding:-0.25rem;}
+	.table td, .table th{padding:0.25rem;}
 }
 @media only screen and (max-width:400px) {
 	.submit_style{
@@ -2284,6 +2284,6 @@ ol li::before {
 	tr td{width:100%;}
 	thead, th, tbody, textarea{width:100%;}
 	.gift_card{color:#fff;width:350px;margin:0 auto;position:relative;top:110px;}
-	.table td, .table th{padding:-0.25rem;}
+	.table td, .table th{padding:0.25rem;}
 }
 .gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:75px;}
