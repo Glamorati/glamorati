@@ -2286,4 +2286,6 @@ ol li::before {
 	.gift_card{color:#fff;width:350px;margin:0 auto;position:relative;top:110px;}
 	.table td, .table th{padding:0.45rem;}
 }
+@media only screen and (min-width:850px){
 .gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:75px;}
+}
