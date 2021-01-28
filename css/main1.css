@@ -2289,3 +2289,15 @@ ol li::before {
 @media only screen and (min-width:850px){
 .gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:75px;}
 }
+.three-dots {
+  text-align: center;
+}
+
+.three-dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:#fff;
+  display: inline-block;
+  margin: 0 5px;
+}
