@@ -2274,7 +2274,7 @@ ol li::before {
 	td img{width:100%;}
 	table{width:100%;}
 	.gift_card{color:#fff;width:330px;margin:0 auto;position:relative;top:100px;}
-	.coming_soon{color:#fff;font-weight:300;font-size:30px;}
+	.coming_soon{color:#fff;font-weight:300;font-size:22px;}
 }
 @media only screen and (max-width:400px) {
 	.submit_style{
@@ -2288,6 +2288,7 @@ ol li::before {
 }
 @media only screen and (min-width:850px){
 .gift_card{color:#fff;width:450px;margin:0 auto;position:relative;top:75px;}
+	.coming_soon{color:#fff;font-weight:500;font-size:42px;}
 }
 .three-dots {
   text-align: center;
@@ -2301,6 +2302,6 @@ ol li::before {
   display: inline-block;
   margin: 20px 5px;
 }
-.coming_soon{color:#fff;font-weight:500;font-size:42px;}
+
 
 
