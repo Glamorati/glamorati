@@ -2274,7 +2274,7 @@ ol li::before {
 	td img{width:100%;}
 	table{width:100%;}
 	.gift_card{color:#fff;width:330px;margin:0 auto;position:relative;top:100px;}
-	
+	.coming_soon{color:#fff;font-weight:300;font-size:30px;}
 }
 @media only screen and (max-width:400px) {
 	.submit_style{
